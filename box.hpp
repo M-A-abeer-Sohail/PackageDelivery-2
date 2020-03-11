@@ -1,17 +1,10 @@
-struct Box
+class Box
 {
+private:
     int length;
-    int width;
+    int breadth;
     int height;
 
-    Box()
-    {
-        length = width = height = 0;
-    }
-
-
-    int volume()
-    {
-        return 0;
-    }
+public:
+    Box(int a, int b);
 };
