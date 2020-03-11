@@ -1,24 +1,40 @@
-struct Truck
+// struct Truck
+// {
+//     char driver[32];
+//     int petrol;
+//     int money;
+//     int fullMileage;
+//     int emptyMileage;
+//     Box *box;
+
+//     void load(int numBox)
+//     {
+
+//     }
+//     void unload()
+//     {
+
+//     }
+
+//     float cost()
+//     {
+
+//     }
+// };
+
+class Truck
 {
+private:
     char driver[32];
     int petrol;
     int money;
     int fullMileage;
     int emptyMileage;
-    Box *box;
+    Box *boxArray;
 
-    void load(int numBox)
-    {
-
-    }
-    void unload()
-    {
-
-    }
-
-    float cost()
-    {
-
-    }
+public:
+    void load(int numBox);
+    void unload();
+    float cost();
+    void setBox(Box *a);
 };
-
